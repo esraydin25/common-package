@@ -41,7 +41,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/cars/check-car-available/**",
                         "/api/cars/**",
                         "/api/payments/check-payment-completed"
-                ,"/api/filters")
+                ,"/api/filters","/actuator/**")
                 .permitAll()
                 .requestMatchers("/api/**")
                 .hasAnyRole("user")
